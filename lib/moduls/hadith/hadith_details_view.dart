@@ -52,7 +52,7 @@ class HadithDetailsView extends StatelessWidget {
                 data.title,
                 style: theme.textTheme.bodyMedium?.copyWith(
                     color: provider.isDark()
-                        ? theme.primaryColorDark
+                        ? theme.primaryColor
                         : Colors.black),
               ),
 
@@ -70,7 +70,7 @@ class HadithDetailsView extends StatelessWidget {
                       data.bodyContent,
                       style: theme.textTheme.bodySmall?.copyWith(
                           color: provider.isDark()
-                              ? theme.primaryColorDark
+                              ? theme.primaryColor
                               : Colors.black),
                       textAlign: TextAlign.center,
                     ),

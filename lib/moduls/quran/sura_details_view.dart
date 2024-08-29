@@ -63,7 +63,7 @@ class _LayoutviewState extends State<SuraDetailsView> {
                     "سورة ${data.suraName}",
                     style: theme.textTheme.bodyMedium?.copyWith(
                         color: provider.isDark()
-                            ? theme.primaryColorDark
+                            ? theme.primaryColor
                             : Colors.black),
                   ),
                   const SizedBox(
@@ -71,7 +71,7 @@ class _LayoutviewState extends State<SuraDetailsView> {
                   ),
                   Icon(Icons.play_circle_fill_outlined,
                       color: provider.isDark()
-                          ? theme.primaryColorDark
+                          ? theme.primaryColor
                           : Colors.black),
                 ],
               ),
