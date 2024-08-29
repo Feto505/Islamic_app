@@ -2,7 +2,6 @@ import 'dart:core';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:islamic_app/core/settings_provider.dart';
-import 'package:islamic_app/core/themes/app_theme.dart';
 import 'package:provider/provider.dart';
 import 'quran.dart';
 
@@ -37,13 +36,13 @@ class _LayoutviewState extends State<SuraDetailsView> {
           centerTitle: true,
         ),
         body: Container(
-          margin: EdgeInsets.only(
+          margin: const EdgeInsets.only(
             top: 10,
             left: 30,
             right: 30,
             bottom: 80,
           ),
-          padding: EdgeInsets.only(
+          padding: const EdgeInsets.only(
             top: 30,
             left: 30,
             right: 30,
@@ -51,8 +50,8 @@ class _LayoutviewState extends State<SuraDetailsView> {
           ),
           decoration: BoxDecoration(
             color: provider.isDark()
-                ? Color(0xff141a2e).withOpacity(0.8)
-                : Color(0xfff8f8f8).withOpacity(0.8),
+                ? const Color(0xff141a2e).withOpacity(0.8)
+                : const Color(0xfff8f8f8).withOpacity(0.8),
             borderRadius: BorderRadius.circular(25),
           ),
           child: Column(
@@ -67,7 +66,7 @@ class _LayoutviewState extends State<SuraDetailsView> {
                             ? theme.primaryColorDark
                             : Colors.black),
                   ),
-                  SizedBox(
+                  const SizedBox(
                     width: 15,
                   ),
                   Icon(Icons.play_circle_fill_outlined,
@@ -84,11 +83,11 @@ class _LayoutviewState extends State<SuraDetailsView> {
                 "رقم السورة ${data.suraIndex}",
                 style: theme.textTheme.bodySmall,
               ),
-              Divider(),
-              SizedBox(
+              const Divider(),
+              const SizedBox(
                 height: 10,
               ),
-              if (versesList.isEmpty) Text("No data loaded"),
+              if (versesList.isEmpty) const Text("No data loaded"),
               Expanded(
                 child: ListView.builder(
                   itemBuilder: (context, index) => Padding(

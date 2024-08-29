@@ -1,7 +1,7 @@
 // import 'dart:nativewrappers/_internal/vm/lib/core_patch.dart';
 
 import 'package:flutter/material.dart';
-// import 'package:shared_preferences/shared_preferences.dart';
+// import 'package:shared_preferences/shared_preferences.dart';// cant use share pref
 
 class SettingsProvider extends ChangeNotifier {
   String currentLanguage = "en";
